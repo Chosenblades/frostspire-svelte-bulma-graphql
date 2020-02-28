@@ -1,3 +1,3 @@
-# frostspire-svelte-bulma
+# frostspire-svelte-bulma-graphql
 
 Frostspire website readme
