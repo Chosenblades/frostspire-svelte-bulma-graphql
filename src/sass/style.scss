@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,600');
+
+// Set your brand colors
+$light-blue: #039be5;
+$blue: #03a9f4;
+
+// Update Bulma's global variables
+$family-sans-serif: "Exo 2", sans-serif;
+$primary: $light-blue;
+
+// Update some of Bulma's component variables
+
+//Navbar
+$navbar-background-color: $primary;
+$navbar-item-hover-background-color: $blue;
+
+//Table
+$table-background-color: transparent;
+
+// Import bulma's colors, etc
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+
+//Navbar
+$navbar-item-color: $white;
+$navbar-item-hover-color: $white;
+$navbar-padding-vertical: 0;
+//$navbar-padding-horizontal: 15rem;
+
+//Modal
+$modal-card-head-background-color: $primary;
+$modal-card-title-color: $white;
+$modal-content-width: 900px;
+
+
+// Import the rest of bulma
+@import "../../node_modules/bulma/sass/base/_all.sass";
+//Elements
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/notification.sass";
+@import "../../node_modules/bulma/sass/elements/other.sass";
+@import "../../node_modules/bulma/sass/elements/table.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+//Forms
+@import "../../node_modules/bulma/sass/form/_all.sass";
+//Grid
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+//Layouts
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+//Components
+@import "../../node_modules/bulma/sass/components/_all.sass"; //import all while in development
+/*@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/components/media.sass";
+@import "../../node_modules/bulma/sass/components/message.sass";
+@import "../../node_modules/bulma/sass/components/panel.sass";*/
+
+//Import bulma-tooltip
+@import "../../node_modules/bulma-tooltip/dist/css/bulma-tooltip.sass";
+
+html {
+    overflow-y: auto;
+    margin: 0;
+	height: 100vh;
+	background-image: url("../img/background.png");
+	background-attachment: fixed;
+	background-position:center;
+}
+
+.db {
+	width: 70%;
+	margin: 0 auto;
+}
+
+@include desktop {
+	.navbar.is-spaced {
+		padding: 0 10rem;
+	}
+}
+
+@include widescreen {
+	.navbar.is-spaced {
+		padding: 0 20rem;
+	}
+}
+
+.navbar a.navbar-burger:hover {
+	color: #FFFFFF;
+}
+
+.navbar-menu {
+	//position: absolute;
+	z-index: 100;
+}
+
+.message-header {
+	justify-content: center;
+    align-items: center;
+}

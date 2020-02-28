@@ -1,0 +1,48 @@
+{
+  "name": "frostspire-svelte-bulma",
+  "description": "Frostspire website",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "sapper dev",
+    "build": "sapper build --legacy",
+    "export": "sapper export --legacy",
+    "start": "node __sapper__/build",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "css-build": "node-sass --omit-source-map-url src/sass/style.scss static/css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "test": "run-p --race dev cy:run"
+  },
+  "dependencies": {
+    "bulma-toast": "^1.5.4",
+    "bulma-tooltip": "^2.0.2",
+    "compression": "^1.7.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.6.0",
+    "helmet": "^3.21.3",
+    "mongodb": "^3.5.4",
+    "mongoose": "^5.9.2",
+    "sirv": "^0.4.0",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/runtime": "^7.8.4",
+    "bulma": "^0.7.5",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "sapper": "^0.27.10",
+    "svelte": "^3.19.1"
+  }
+}
