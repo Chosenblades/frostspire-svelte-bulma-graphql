@@ -1,3 +1,3 @@
 # frostspire-svelte-bulma-graphql
 
-Frostspire website readme
+Deprecated GraphQL version of https://frostspire.net
