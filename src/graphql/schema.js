@@ -4,7 +4,7 @@ import { skills } from '../utility/skills';
 import { User } from '../models/user';
 import { Highscores} from '../models/highscores';
 
-const uri = "mongodb+srv://frostweb:p7p2Oxzbd84CxQHP@frostspire-dev-tir3e.mongodb.net/frostspire_server?retryWrites=true&w=majority";
+const uri = "hidden";
 
 function connectToDatabase() {
   mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
